@@ -1,0 +1,277 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
+a {
+   text-decoration: none; 
+   color: black;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #f3f1f1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;  
+  
+}
+
+.search_header {
+    display: flex;
+    justify-content: space-around;
+    width: 450px;
+}
+
+.blockImgSearch {
+    display: flex;
+    align-items: center;
+}
+
+.imgSearch {
+    height: 20px;
+    width: 20px;
+    fill: brown;
+}
+.imgSearch:hover {
+    fill:#0077cf;
+}
+
+
+.input_search_header {
+    border: none;
+    width: 100%;
+    height: 42px;
+    padding: 0 0 0 46px;
+    background: #f2f3f5 url(../images/search.svg) 20px center no-repeat;
+    background-size: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.1s linear;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.input_search_header:hover {
+    border-width: 0.3px;
+    background: rgb(229, 238, 245);
+}
+
+.navigation {
+    margin: 16px auto 0;
+    width: 100%;
+    max-width: 1260px; 
+    display: flex;
+    justify-content: flex-end
+}
+
+.menu_navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 562px;
+}
+
+.nav_link {
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;
+}
+
+.nav_link:hover {
+    color: rgb(78, 135, 241);
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    max-width: 1260px; 
+    margin: 45px auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.sidebar_menu {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu_link {
+    padding: 10px 0 10px 10px;
+    transition: all 0.3s;
+}
+
+.menu_link:hover {
+    background: rgb(171, 197, 245);
+}
+
+.main_container {
+    width: 100%;
+    max-width: 940px;  
+}
+
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container_with_items {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item_container {
+    border-width: 0.3px;
+    border: solid rgb(233, 229, 229);
+    border-radius: 7px;
+    margin-bottom: 20px;
+    width: 225px;
+    height: 440px;
+}
+
+.image_item {
+}
+
+.info_item {
+    padding: 35px 0 25px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 12px;
+}
+
+.divButton_in_garbage {
+    width: 100%;
+    max-width: 194px;
+}
+
+.btn_in_garbage {
+    height: 42px;
+    line-height: 42px;
+    border-radius: 5px;
+    background-color: #0077cf;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-size: 13px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    transition: linear .3s;
+}
+
+.btn_in_garbage:hover {
+    background: rgb(229, 238, 245);
+    color: black;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: auto;
+    height: 300px;
+    background: #eeeeee;
+}
+
+.footer_container {
+    height: 300px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_container_middle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_info {
+    font-size: 17px;
+    color: #93969d;
+}
+
+.footer_phone {
+    font-size: 20px;
+    color: #000;
+}
+
+.footer_container_right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+}
+
+.footer_link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text_footer, link {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #93969d;
+}
+
+.footer_social {
+    font-size: 13px;
+}
+
+.social_media {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link_social_media {
+    padding-left: 10px;
+}

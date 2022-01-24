@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
+</head>
+<body>
+    <form class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+      <h3>Создание товара</h3>
+      <input type="text" placeholder="Ссылка на изображение товара" class="input_url" placeholder="" autocomplete="off">
+      <input type="text" placeholder="Название товара" class="input_name" placeholder="" autocomplete="off">
+      <input type="text" placeholder="Количество" class="input_count" placeholder="" autocomplete="off">
+      <input type="text" placeholder="Стоимость" class="input_cost" placeholder="" autocomplete="off">
+      <select style="display: block; height:80px;" name="nubexSelect" size="3" multiple form="nubexForm" class="selectValuta">
+        <option>$</option>
+        <option>₽</option>
+        <option>€</option>    
+    </select>
+    <select style="display: block; height: 148px;" name="nubexSelect" size="12 multiple form="nubexForm" class="selectСhapter">
+        <option>Бакалея</option>
+        <option>Сыры</option>
+        <option>Замороженные овощи</option>
+        <option>Мороженое</option>
+        <option>Кондитерские изделия</option>
+        <option>Соки, воды</option>
+        <option>Рыба и морепродукты</option>  
+        <option>Крабовые палочки</option>
+    </select>
+  <div class="bottom_btn">
+    <a class="waves-effect waves-light btn-small createInfo">Создать</a>
+    <a href="./index.html"class="waves-effect waves-light btn-small CloseTask">закрыть форму</a>
+  </div>      
+  </div >
+    </form>
+<!--                     <input type="text" id="url_product" class="input_url" placeholder="" autocomplete="off">
+                    <input type="text" id="name_product" class="input_name" placeholder="" autocomplete="off">
+                    <input type="text" id="count" class="input_count" placeholder="" autocomplete="off">
+                    <input type="text" id="cost" class="input_cost" placeholder="" autocomplete="off"> -->
+
+            <script type='module' src='./assets/js/components/getProduct.js'></script>  
+</body>
+</html>
