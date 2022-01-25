@@ -12,7 +12,7 @@ function paintCard(element) {
     return `
         <div class="item_container">
             <div class="image_item">
-                <img src="${element.url}" alt="" width="220" height="220">
+                <img class="imgUrl" src="${element.url}" alt="" width="220" height="220">
             </div>
 
             <div class="info_item">

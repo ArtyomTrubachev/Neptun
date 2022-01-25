@@ -7,6 +7,7 @@ function putProdInBagage() {
            let divTitleItem = element.parentElement.parentElement.querySelector('.title_item').textContent;
            let divNumberItem = element.parentElement.parentElement.querySelector('.number_item').textContent;
            let divPriceItem = element.parentElement.parentElement.querySelector('.price_item').textContent;
+           let divUrl = element.parentElement.parentElement.querySelector('.imgUrl').src;
 
             let obj = {};
 
@@ -14,6 +15,7 @@ function putProdInBagage() {
                 'name' : divTitleItem,
                 'count' : divNumberItem,
                 'cost' : divPriceItem,
+                'url' : divUrl,
             }
 
             let bagage = [];

@@ -53,6 +53,24 @@ header {
     width: 450px;
 }
 
+.header_user_main {
+    display: flex;
+    }
+    
+.header_user {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.svgPlusBasket {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
 .blockImgSearch {
     display: flex;
     align-items: center;
@@ -156,7 +174,7 @@ header {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .item_container {
@@ -166,9 +184,7 @@ header {
     margin-bottom: 20px;
     width: 225px;
     height: 440px;
-}
-
-.image_item {
+    margin-left: 10px;
 }
 
 .info_item {

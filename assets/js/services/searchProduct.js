@@ -14,17 +14,16 @@ divSearch.addEventListener('click', ()=> {
     function showArray(array) {
         let divBlockItems = document.querySelector('.container_with_items');
         divBlockItems.innerHTML = '';
-        array.forEach(element => {
-            (Object.values(element)).forEach(el => {
-                let arr = el.name.split(' ');
 
-                if (arr[0] == divInput.value) {
-                    
-                   
+        let valueInput = divInput.value;
+        let valueInputLowerCase = valueInput.toLowerCase();
+
+        array.forEach(element => {
+            Object.values(element).forEach(el => {
+                console.log(el.name.toLowerCase());
+                if (el.name.toLowerCase().includes(valueInputLowerCase)) 
                     divBlockItems.innerHTML += paintCard(el);
-                }
             })
         })
     }
-
 })

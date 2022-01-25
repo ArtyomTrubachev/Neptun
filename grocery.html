@@ -13,7 +13,7 @@
             <header>
                 <div class="header_main">
                     <div class="logo">
-                        <a href="img_neptun">
+                        <a href="index.html" class="img_neptun">
                             <img src="https://neptun-group.ru/sites/all/themes/neptun/images/logo.svg" 
                             width="220"
                             alt="">
@@ -22,6 +22,9 @@
 
                     <div class="search_header">
                         <input type="text" class="input_search_header" placeholder="Поиск">
+                        <div class="blockImgSearch">
+                            <svg class="imgSearch" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                        </div>
                     </div>
                     
                     <div class="header_info">
@@ -29,12 +32,31 @@
                     </div>
 
                     <div class="header_user">
+                        <svg class="imgUsert"  width="28" height="28"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                   <path d="M12,9H8H4c-2.209,0-4,1.791-4,4v3h16v-3C16,10.791,14.209,9,12,9z"/>
+                   <path d="M12,5V4c0-2.209-1.791-4-4-4S4,1.791,4,4v1c0,2.209,1.791,4,4,4S12,7.209,12,5z"/>
+                   </svg>
                         <a href="admin.html" class="btn_user">Войти</a>
                     </div>
-                    <div class="header_user">
-                        <a href="garb.html" class="btn_basket">Корзина</a>
+
+                    <div class="header_user_main">
+                        <div class="header_user">
+                            <a href="garb.html" class="btn_basket">
+                                <div class="svgPlusBasket">
+                                    <svg class="imgBasket" width="28" height="28" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M61.58 12.88C61.3937 12.638 61.1544 12.4419 60.8805 12.3067C60.6066 12.1715 60.3054 12.1008 60 12.1H14.26L11.89 5.15004C11.7564 4.75442 11.5023 4.41054 11.1633 4.16664C10.8244 3.92274 10.4176 3.79105 10 3.79004H4C3.46957 3.79004 2.96086 4.00075 2.58579 4.37583C2.21071 4.7509 2 5.25961 2 5.79004C2 6.32047 2.21071 6.82918 2.58579 7.20425C2.96086 7.57933 3.46957 7.79004 4 7.79004H8.57L21.72 46.44C21.8553 46.8338 22.1101 47.1755 22.449 47.4175C22.7878 47.6595 23.1936 47.7897 23.61 47.79H52C52.5304 47.79 53.0391 47.5793 53.4142 47.2043C53.7893 46.8292 54 46.3205 54 45.79C54 45.2596 53.7893 44.7509 53.4142 44.3758C53.0391 44.0008 52.5304 43.79 52 43.79H25L23.54 39.48H54C54.4414 39.482 54.8709 39.3379 55.2219 39.0702C55.5728 38.8025 55.8253 38.4262 55.94 38L61.94 14.62C62.0181 14.3219 62.0263 14.0097 61.9638 13.7079C61.9014 13.406 61.77 13.1227 61.58 12.88V12.88Z" fill="black"/>
+                                        <path d="M29.9999 49.4902C22.9199 49.7102 22.9199 59.9802 29.9999 60.2102C37.0799 60.0002 37.0799 49.7102 29.9999 49.4902Z" fill="black"/>
+                                        <path d="M47.4101 49.4902C40.3301 49.7102 40.3301 59.9802 47.4101 60.2102C54.4901 60.0002 54.4901 49.7102 47.4101 49.4902Z" fill="black"/>
+                                        </svg>
+                                    <div>Корзина</div>
+                                </div>
+
+                            </a>
+                        </div>
                         <span class="numberOfProd"></span>
                     </div>
+
                 </div>
             
                 <nav class="navigation">
@@ -164,5 +186,6 @@
     </div>
 
     <script type='module' src='./assets/js/components/grocery.js'></script>
+    <script type='module' src='./assets/js/services/searchProduct.js'></script> 
 </body>
 </html>
